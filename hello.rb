@@ -14,7 +14,7 @@ bot = Discordrb::Commands::CommandBot.new(
 dajare = CSV.read('./dajare.tsv', col_sep: "\t", headers: false)
 
 bot.command :purecure do |event|
- event.send_message("こんにちは、 #{event.user.name}. プリキュアに返信するね")
+ event.send_message("こんにちは、 #{event.user.name}. プリキュアに変身するね")
  event.send_message(Precure.all.sample[:transform_message])
 end
 
